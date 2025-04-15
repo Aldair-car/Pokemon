@@ -1,0 +1,212 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+header {
+  background: #ffcc00;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header img {
+  height: 40px;
+}
+
+header input,
+header select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 220px;
+  padding: 1rem;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  height: calc(100vh - 96px);
+  overflow-y: auto;
+}
+
+aside h3 {
+  margin-top: 1rem;
+}
+
+aside label {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.scrollable {
+  max-height: 500px; /* AUMENTADO para mostrar más habilidades */
+  overflow-y: auto;
+}
+
+.app {
+  flex: 1;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.tipos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.tipo {
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.tipo.fire {
+  background: #f08030;
+}
+.tipo.water {
+  background: #6890f0;
+}
+.tipo.grass {
+  background: #78c850;
+}
+.tipo.electric {
+  background: #f8d030;
+}
+.tipo.ice {
+  background: #98d8d8;
+}
+.tipo.fighting {
+  background: #c03028;
+}
+.tipo.poison {
+  background: #a040a0;
+}
+.tipo.ground {
+  background: #e0c068;
+}
+.tipo.flying {
+  background: #a890f0;
+}
+.tipo.psychic {
+  background: #f85888;
+}
+.tipo.bug {
+  background: #a8b820;
+}
+.tipo.rock {
+  background: #b8a038;
+}
+.tipo.ghost {
+  background: #705898;
+}
+.tipo.dragon {
+  background: #7038f8;
+}
+.tipo.dark {
+  background: #705848;
+}
+.tipo.steel {
+  background: #b8b8d0;
+}
+.tipo.fairy {
+  background: #ee99ac;
+}
+.tipo.normal {
+  background: #a8a878;
+}
+
+.detalle {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.detalle img {
+  width: 200px;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.volver {
+  background: #ffcc00;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.stats {
+  text-align: left;
+  max-width: 400px;
+  margin: auto;
+}
+
+.stat {
+  margin-bottom: 10px;
+}
+
+.barra {
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.relleno {
+  background: #4caf50;
+  height: 100%;
+  text-align: right;
+  color: white;
+  padding-right: 5px;
+  line-height: 20px;
+  font-size: 0.8rem;
+}
